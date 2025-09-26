@@ -26,7 +26,11 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIViewControllerBasedStatusBarAppearance": false,
+        "UIStatusBarStyle": "UIStatusBarStyleLightContent"
+      }
     },
     "android": {
       "adaptiveIcon": {
