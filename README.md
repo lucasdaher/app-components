@@ -21,6 +21,16 @@ Este aplicativo tem como objetivo realizar a demonstração de componentes do Re
   - [StatusBar](#13-statusbar)
   - [Switch](#14-switch)
   - [TouchableOpacity](#15-touchableopacity)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Funcionalidades implementadas](#funcionalidades-implementadas)
+  - [Tela Principal (HomeScreen)](#tela-principal-homescreen)
+  - [Tela de Detalhes (ProductDetailScreen)](#tela-de-detalhes-productdetailscreen)
+  - [Tela de Busca (SearchScreen)](#tela-de-busca-searchscreen)
+  - [Modal do Carrinho (CartModal)](#modal-do-carrinho-cartmodal)
+  - [Modal do Carrinho (CartModal)](#modal-do-carrinho-cartmodal)
+  - [Tela de Configurações (SettingsScreen)](#tela-de-configurações-settingsscreen)
+- [Como executar](#como-executar)
+- [Aprendizados](#aprendizados)
 
 ## Sobre o Aplicativo
 
