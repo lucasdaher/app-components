@@ -10,6 +10,17 @@ Este aplicativo tem como objetivo realizar a demonstração de componentes do Re
   - [Text](#2-text)
   - [TextInput](#3-textinput)
   - [Button](#4-button)
+  - [Alert](#5-alert)
+  - [Image](#6-image)
+  - [Modal](#7-modal)
+  - [ActivityIndicator](#8-activityindicator)
+  - [FlatList](#9-flatlist)
+  - [SafeAreaView](#10-safeareaview)
+  - [ScrollView](#11-scrollview)
+  - [SectionList](#12-sectionlist)
+  - [StatusBar](#13-statusbar)
+  - [Switch](#14-switch)
+  - [TouchableOpacity](#15-touchableopacity)
 
 ## Sobre o Aplicativo
 
@@ -131,9 +142,12 @@ O **iDroga** é um marketplace completo para produtos farmacêuticos, permitindo
 ## Estrutura do Projeto
 
 ```bash
-my-expo-app/
+app-components/
 ├── components/
 │   └── CartModal.tsx          # Modal do carrinho (Modal, FlatList, TouchableOpacity)
+│   └── Container.tsx          # Container
+│   └── EditScreenInfo.tsx     # Tela de edições
+│   └── ScreenContent.tsx      # Tela de conteúdo
 ├── data/
 │   └── products.ts            # Dados dos produtos e categorias
 ├── screens/
