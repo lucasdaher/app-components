@@ -11,7 +11,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~53.0.6",
+    "expo": "54.0.10",
     "nativewind": "latest",
     "react": "19.0.0",
     "react-native": "0.79.5",
