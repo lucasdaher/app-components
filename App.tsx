@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { SimpleHomeScreen as HomeScreen } from './screens/SimpleHomeScreen';
-import { SimpleProductDetailScreen as ProductDetailScreen } from './screens/SimpleProductDetailScreen';
-import { SimpleCartModal as CartModal, CartItem } from './components/SimpleCartModal';
+import { HomeScreen } from './screens/HomeScreen';
+import { ProductDetailScreen } from './screens/ProductDetailScreen';
+import { CartModal, CartItem } from './components/CartModal';
 import { Product } from './data/products';
 import { StatusBar } from 'react-native';
 

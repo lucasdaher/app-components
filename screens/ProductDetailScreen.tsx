@@ -19,7 +19,7 @@ interface ProductDetailScreenProps {
   onAddToCart: (product: Product, quantity: number) => void;
 }
 
-export const SimpleProductDetailScreen: React.FC<ProductDetailScreenProps> = ({
+export const ProductDetailScreen: React.FC<ProductDetailScreenProps> = ({
   product,
   onBack,
   onAddToCart,
@@ -116,19 +116,14 @@ export const SimpleProductDetailScreen: React.FC<ProductDetailScreenProps> = ({
                 <View style={styles.quantityControls}>
                   <TouchableOpacity
                     onPress={decrementQuantity}
-                    style={[
-                      styles.quantityButton,
-                      quantity <= 1 && styles.quantityButtonDisabled
-                    ]}
+                    style={[styles.quantityButton, quantity <= 1 && styles.quantityButtonDisabled]}
                     activeOpacity={0.7}
-                    disabled={quantity <= 1}
-                  >
+                    disabled={quantity <= 1}>
                     <Text
                       style={[
                         styles.quantityButtonText,
-                        quantity <= 1 && styles.quantityButtonTextDisabled
-                      ]}
-                    >
+                        quantity <= 1 && styles.quantityButtonTextDisabled,
+                      ]}>
                       -
                     </Text>
                   </TouchableOpacity>
@@ -139,17 +134,15 @@ export const SimpleProductDetailScreen: React.FC<ProductDetailScreenProps> = ({
                     onPress={incrementQuantity}
                     style={[
                       styles.quantityButton,
-                      quantity >= product.stock && styles.quantityButtonDisabled
+                      quantity >= product.stock && styles.quantityButtonDisabled,
                     ]}
                     activeOpacity={0.7}
-                    disabled={quantity >= product.stock}
-                  >
+                    disabled={quantity >= product.stock}>
                     <Text
                       style={[
                         styles.quantityButtonText,
-                        quantity >= product.stock && styles.quantityButtonTextDisabled
-                      ]}
-                    >
+                        quantity >= product.stock && styles.quantityButtonTextDisabled,
+                      ]}>
                       +
                     </Text>
                   </TouchableOpacity>
@@ -162,9 +155,7 @@ export const SimpleProductDetailScreen: React.FC<ProductDetailScreenProps> = ({
 
       <View style={styles.footer}>
         <View style={styles.totalContainer}>
-          <Text style={styles.totalText}>
-            Total: R$ {(product.price * quantity).toFixed(2)}
-          </Text>
+          <Text style={styles.totalText}>Total: R$ {(product.price * quantity).toFixed(2)}</Text>
         </View>
 
         {product.stock > 0 ? (

@@ -26,7 +26,7 @@ interface HomeScreenProps {
   cartCount: number;
 }
 
-export const SimpleHomeScreen: React.FC<HomeScreenProps> = ({
+export const HomeScreen: React.FC<HomeScreenProps> = ({
   onProductPress,
   onCartPress,
   onSearchPress,
